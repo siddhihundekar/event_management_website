@@ -1,0 +1,429 @@
+
+  /* Navbar */
+  .navbar {
+    padding: 0em 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid rgb(101, 17, 81);
+  }
+  .container-fluid .logo img{
+    height:8em;
+    width:8em;
+    border-radius: 50%;
+  }
+  .container-fluid .logo a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(101, 17, 81);
+  }
+  .container-fluid .logo a:hover{
+    color: rgb(101, 17, 81);
+  }
+  .navbar-nav .nav-item {
+    margin-left: 5em;
+  }
+  .navbar-light .navbar-nav .nav-item .nav-link{
+    font-weight: 600;
+    color: rgb(101, 17, 81);
+  }
+
+
+  /* First page */
+  .first-page {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 8em;
+    height: 39em;
+    background-image: url("https://partyslate.imgix.net/photos/2161582/photo-be9ffc98-055a-46a9-b63e-05504da70133.jpg?ixlib=js-2.3.2&auto=compress,format");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .first-page h1 {
+    padding: 2.5em 0em 0em 2em;
+    font-size: 3em;
+    /* color: #008080; */
+    color: rgb(101, 17, 81);
+    font-weight: 500;
+  }
+  .first-page p {
+    font-family: monospace;
+    padding: 1.5em 0em 0em 4em;
+    /* color: #008080; */
+    color: rgb(101, 17, 81);
+    font-size: 1.5em;
+  }
+
+
+  /* Fourth page */
+  .fourth-page, .sixth-page {
+    padding: 4em 4em;
+  }
+  .fourth-page .information, .sixth-page .information {
+    font-weight: 300;
+  }
+  .fourth-page .information h1, .sixth-page .information h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(101, 17, 81);
+    font-size: 2.5em;
+    margin: 1em 0em 1em 0em;
+  }
+  .fourth-page .information p, .sixth-page .information p {
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+  .image img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .fourth-page .image, .sixth-page .image {
+    flex: 1;
+    margin: 1em;
+  }
+  .fourth-page .information, .sixth-page .information {
+    flex: 1;
+  }
+  .fourth-page .information, .sixth-page .information {
+    padding-right: 2em;
+  }
+  .fourth-page .information .learn-more, .sixth-page .information .learn-more{
+    border-color: rgb(101, 17, 81);
+    color: rgb(101, 17, 81);
+  }
+  .fourth-page .information .learn-more:hover, .sixth-page .information .learn-more:hover{
+    background-color: rgb(101, 17, 81);
+    color: #ffffff;
+  }
+
+  /* mobile-sixth-page */
+  .mobile-sixth-page{
+    display: none;
+  }
+
+
+  /* Fifth and Seventh Page */
+  .seventh-page, .fifth-page {
+    height:40em; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  /* counter */
+  .counter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ded2bc;
+  }
+  .counter-div p{
+    color: rgb(101, 17, 81);
+  }
+
+  /* Contact form */
+  .form-section{
+    padding: 4em 5em 4em 5em;
+  }
+  .form-section h3{
+    /* text-align: center; */
+    margin-bottom: 1.5em;
+    color: rgb(101, 17, 81);
+  }
+  .form-section input, .form-section select, .form-section textarea{
+    border: 1px solid #ded2bc;
+  }
+  .form-section select option{
+    color: rgb(101, 17, 81);
+  }
+  .form-section select option:hover{
+    background-color: #e5d745;
+    /* background-color: black; */
+  }
+  .form-section .submit{
+    margin-top: 1em;
+    border-color: rgb(101, 17, 81);
+    color: rgb(101, 17, 81);
+  }
+  .form-section .submit:hover{
+    background-color: rgb(101, 17, 81);
+    color: #ffffff;
+  }
+
+  /* footer */
+  .footer {
+    background-color: #ded2bc;
+    color: rgb(101, 17, 81);
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+
+    /* navbar button */
+    .navbar-toggler{
+      align-content: center;
+    }
+
+    /* navbar */
+    .navbar{
+      padding: 0em;
+    }
+    .container-fluid .logo{
+      display: flex;
+    }
+    .container-fluid .logo img{
+      margin-left: -1.3em;
+      height:7em;
+      width:7em;
+      border-radius: 50%;
+    }
+    .container-fluid .logo a{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0em 0.2em 0em -0.7em;
+      align-content: center;
+      font-size: 0.9em;
+      font-weight: 600;
+      color: rgb(101, 17, 81);
+    }
+    .navbar-nav .nav-item {
+      margin-left: 1em;
+    }
+
+    /* first page */
+    .first-page {
+      height: 30vh;
+      margin-top: 7em;
+    }
+    .first-page h1 {
+      font-size: 1em;
+      padding: 1em 0em 0em 1em;
+    }
+    .first-page p {
+      font-size: 0.6em;
+      padding: 1em 0em 0em 1.7em;
+    }
+
+    /* fourth and sixth page */
+    .d-flex {
+      flex-direction: column;
+    }
+    .sixth-page{
+      display: none;
+    }
+    .fourth-page, .mobile-sixth-page {
+      padding: 3em 1em;
+      display: block;
+    }
+    .fourth-page .information, .mobile-sixth-page .information {
+      padding-left: 0.5em;
+      padding-bottom: 1em;
+      font-weight: 300;
+      flex: 1;
+    }
+    .fourth-page .image, .mobile-sixth-page .image {
+      width: 100%;
+      height: 30vh; 
+      margin: 0;
+      flex: 1;
+    }
+    .fourth-page .image img, .mobile-sixth-page .image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .fourth-page .information h1, .mobile-sixth-page .information h1 {
+      font-size: 1.4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rgb(101, 17, 81);
+      margin: 1em 0em 1em 0em;
+    }
+    .fourth-page .information p, .mobile-sixth-page .information p {
+      font-size: 0.9em;
+      font-weight: 200;
+    }
+    .mobile-sixth-page .information .learn-more{
+      border-color: rgb(101, 17, 81);
+      color: rgb(101, 17, 81);
+    }
+    .mobile-sixth-page .information .learn-more:hover{
+      background-color: rgb(101, 17, 81);
+      color: #ffffff;
+    }
+
+    /* fifth and seventh page */
+    .seventh-page, .fifth-page {
+      height: 20em; 
+    }
+
+    /* Contact form */
+    .form-section{
+      padding: 2em 2em 2em 2em;
+    }
+  }
+
+
+
+/* wedding and corporate types */
+
+/* welcome page */
+.Explore-wedding {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 8em;
+  height: 35em;
+  background-image: url("https://www.thetamarindtree.in/wp-content/uploads/2024/09/SAL04106-1500x1000.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+}
+.Explore-privateparty {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 8em;
+  height: 35em;
+  background-image: url("https://cdn.shopify.com/s/files/1/0257/6718/2416/files/Party-Background-green-with-presents.jpg?v=1595051600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+}
+.Explore-corporate {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 8em;
+  height: 35em;
+  background-image: url("https://images.unsplash.com/photo-1511795409834-ef04bbd61622?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnQlMjBkZWNvcmF0aW9ufGVufDB8fDB8fHww");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+}
+.Explore-wedding .welcome-info, .Explore-corporate .welcome-info,.Explore-privateparty .welcome-info{
+  height: 35em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Explore-wedding h1, .Explore-corporate h1, .Explore-privateparty h1 {
+  padding: 3em 3em 0em 3em;
+  text-align: center;
+  font-size: 3em;
+  /* color: rgb(101, 17, 81); */
+  font-weight: 500;
+}
+.Explore-wedding p, .Explore-corporate p, .Explore-privateparty p  {
+  font-family: monospace;
+  padding: 2em 7em 7em 10em;
+  /* color: rgb(101, 17, 81); */
+  font-size: 1.5em;
+}
+
+/* welcome page mobile responsive */
+@media (max-width: 768px) {
+  .Explore-corporate, .Explore-wedding, .Explore-privateparty {
+    height: 30vh;
+    margin-top: 7em;
+    position: relative;
+  }
+  .Explore-wedding .welcome-info, .Explore-corporate .welcome-info, .Explore-privateparty .welcome-info{
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .Explore-corporate h1, .Explore-wedding h1, .Explore-privateparty h1 {
+    font-size: 1em;
+    padding: 3em 0em 0em 1em;
+  }
+  .Explore-corporate p,.Explore-wedding p, .Explore-privateparty p {
+    font-size: 0.7em;
+    padding: 2em 2em 0em 2em;
+  }
+}
+/* .wedding-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(101, 17, 81);
+  font-weight: bold;
+  margin-bottom: 2em;
+} */
+ 
+.card {
+  border: 1px solid #ded2bc;
+  border-radius: 10px;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+}
+.card:hover { 
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15em;
+  object-fit: cover;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+    overflow: hidden;
+}
+.card-body {
+  padding: 1.5em;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* text-align: center; */
+  margin-bottom: 1em;
+  font-size: 1.7rem;
+  color: rgb(101, 17, 81);
+  font-weight: bold;
+}
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+/* @media (max-width: 768px) {
+  .Explore-corporate, .Explore-wedding {
+    height: 30vh;
+    margin-top: 7em;
+    position: relative;
+  }
+  .Explore-wedding .welcome-info, .Explore-corporate .welcome-info{
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .Explore-corporate h1, .Explore-wedding h1 {
+    font-size: 1em;
+    padding: 3em 0em 0em 1em;
+  }
+  .Explore-corporate p,.Explore-wedding p {
+    font-size: 0.7em;
+    padding: 2em 2em 0em 2em;
+  }
+} */
+
